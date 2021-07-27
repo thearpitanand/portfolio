@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--natural-color);
+}
+.main_logo {
+  font-weight: 600;
+  margin-left: 3rem;
+  flex-grow: 1;
+}
+
+/* Desktop Navbar Links */
+.DesktopNavbarLinks {
+  flex-grow: 3;
+}
+.DesktopNavbarLinks ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.DesktopNavbarLinks ul li {
+  margin: 0 1rem 0 1rem;
+}
+.DesktopNavbarLinks ul li a {
+  font-weight: 400;
+}
+.DesktopNavbarLinks ul li a:hover,
+.DesktopNavbarLinks ul li a:active {
+  border: solid;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* Mobile Navbar Links */
+.MobileNavbarLinks {
+  display: none;
+}
+
+/* Media Query */
+@media (max-width: 700px) {
+  .main_logo {
+    margin-left: 1rem;
+  }
+
+  /* Desktop Navbar Links */
+  .DesktopNavbarLinks {
+    display: none;
+  }
+  /* Keyframe For Hamburger Icon */
+  @keyframes hamOpen {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Key Frame for Opening and Closing */
+  @keyframes animationOnOpen {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Mobile Navbar Links */
+  .MobileNavbarLinks {
+    display: flex;
+    margin-right: 1rem;
+  }
+  .MobileNavbarLinks span {
+    color: var(--natural-color);
+    cursor: pointer;
+  }
+  .MobileNavbarLinks ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    position: absolute;
+    top: 3.3rem;
+    right: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+    animation: animationOnOpen 1s;
+  }
+  .MobileNavbarLinks ul li {
+    margin: 1rem auto;
+  }
+  .MobileNavbarLinks ul li:hover,
+  .MobileNavbarLinks ul li:active {
+    color: var(--primary-color);
+  }
+  .MobileNavbarLinks ul li a {
+    font-weight: 400;
+  }
+}

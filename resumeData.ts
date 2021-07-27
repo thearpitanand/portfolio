@@ -54,7 +54,7 @@ const resumeData = {
       {
         company: "",
         title: "",
-        years: "May 2019 - Present",
+        years: "",
         description: "",
       },
     ],
