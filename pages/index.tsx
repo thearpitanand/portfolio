@@ -1,16 +1,23 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Typewriter from "typewriter-effect";
 import Navbar from "../components/Navbar/Navbar";
+import About from "../components/About/About";
 const Home = () => {
-  const [resumeData, setResumeData] = useState({});
-
+  const [main, setMain] = useState({});
+  const [resume, setResume] = useState({});
+  const [skills, setSkills] = useState({});
+  const [portfolio, setPortfolio] = useState({});
   useEffect(() => {
     fetch("/api/data")
       .then((res) => res.json())
       .then((data) => {
-        setResumeData(data);
+        if (data) {
+          setMain(data.main);
+          setPortfolio(data.portfolio);
+          setResume(data.resume);
+          setSkills(data.skills);
+        }
       });
   }, []);
 
@@ -25,19 +32,7 @@ const Home = () => {
       </Head>
       <div>
         <Navbar />
-        <Typewriter
-          options={{
-            strings: [
-              "Arpit Anand",
-              "Full Stack Developer",
-              "Front End Developer",
-              "Back End Developer",
-            ],
-            delay: 50,
-            autoStart: true,
-            loop: true,
-          }}
-        />
+        <About main={main} />
       </div>
     </React.Fragment>
   );

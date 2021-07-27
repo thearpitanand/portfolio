@@ -1,4 +1,5 @@
 .navbar {
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,11 +16,13 @@
 /* Desktop Navbar Links */
 .DesktopNavbarLinks {
   flex-grow: 3;
+  margin-right: 3rem;
 }
 .DesktopNavbarLinks ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
+  margin-left: 10%;
 }
 .DesktopNavbarLinks ul li {
   margin: 0 1rem 0 1rem;
@@ -29,9 +32,8 @@
 }
 .DesktopNavbarLinks ul li a:hover,
 .DesktopNavbarLinks ul li a:active {
-  border: solid;
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-bottom: solid;
+  padding: 0 0 5px 0;
 }
 
 /* Mobile Navbar Links */
@@ -40,7 +42,7 @@
 }
 
 /* Media Query */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .main_logo {
     margin-left: 1rem;
   }

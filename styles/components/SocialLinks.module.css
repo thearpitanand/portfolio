@@ -1,0 +1,29 @@
+.socialLink {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+  }
+  
+  .socialLink li a {
+    margin: 0 5px 0 0;
+  }
+  
+  .socialLink .instagram:hover {
+      color: #FD1D1D;
+  }
+  .socialLink .facebook:hover {
+      color: #4267B2;
+  }
+  .socialLink .github:hover {
+      color: #333333;
+  }
+  .socialLink .unsplash:hover {
+      color: #000000;
+  }
+  .socialLink .twitter:hover {
+      color: #1DA1F2;
+  }
+  .socialLink .linkedin:hover {
+      color: #0077b5;
+  }

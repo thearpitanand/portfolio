@@ -1,9 +1,14 @@
 const resumeData = {
   main: {
     name: "Arpit Anand",
-    occupation: "Full - Stack Web Developer",
+    occupation: [
+      "Arpit Anand",
+      "Full Stack Developer",
+      "Front End Developer",
+      "Back End Developer",
+    ],
     description: "I eat, sleep and breathe Code.",
-    image: "",
+    image: "/mine.svg",
     bio: "Hi there! I am self taught web developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do. I am dedicated to perfecting my craft by learning from more seasoned developers, remaining humble, and continuously making strides to learn all that I can about development. While a student at Veer Bahadur Singh Purvanchal University, I studied Mechanical Engineering, but I believe that my understanding of problem solving and complex algorithms are also skills that have and will continue to contribute to my overall success as a developer.",
     contactmessage: "Get in touch with me together we can make changes.",
     email: "arpitssanand@gmail.com",
@@ -58,37 +63,8 @@ const resumeData = {
         description: "",
       },
     ],
-    skills: [
-      {
-        name: "ReactJs",
-        level: "100%",
-      },
-      {
-        name: "Python",
-        level: "40%",
-      },
-      {
-        name: "Git",
-        level: "70%",
-      },
-      {
-        name: "JavaScript",
-        level: "100%",
-      },
-      {
-        name: "Web Development",
-        level: "99%",
-      },
-      {
-        name: "MongoDB",
-        level: "89%",
-      },
-      {
-        name: "Node",
-        level: "94%",
-      },
-    ],
   },
+  skills: {},
   portfolio: {
     projects: [
       {
@@ -96,14 +72,6 @@ const resumeData = {
         category: "",
         image: "",
         url: "",
-      },
-    ],
-  },
-  testimonials: {
-    testimonials: [
-      {
-        text: "",
-        user: "",
       },
     ],
   },
