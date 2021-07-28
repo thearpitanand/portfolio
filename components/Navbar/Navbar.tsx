@@ -1,4 +1,7 @@
+// CSS
 import navbarStyles from "../../styles/components/Navbar.module.css";
+
+// Components
 import NavbarDesktopLinks from "./NavbarDesktopLinks";
 import NavbarMobileLinks from "./NavbarMobileLinks";
 

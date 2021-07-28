@@ -3,6 +3,8 @@
   display: flex;
   background-color: var(--natural-color);
 }
+
+/* Left Section */
 .main .main__left {
   margin-left: 10%;
   display: flex;
@@ -12,7 +14,6 @@
   width: 50%;
   color: var(--primary-color);
 }
-
 .main .main__left h1 {
   margin: 0;
   font-size: 3rem;
@@ -24,16 +25,15 @@
   margin: 0;
   font-size: 1.5rem;
 }
-
 .main .main__left .occupation {
   display: flex;
   align-items: center;
 }
-
 .main .main__left .occupation p:nth-child(1) {
   margin-right: 0.3rem;
 }
 
+/* Right Section */
 .main .main__right {
   margin-right: 10%;
   display: flex;
@@ -41,40 +41,50 @@
   align-items: center;
   justify-content: right;
 }
-
 .main .main__right img {
   height: 20rem;
 }
 
+/* Media Query for screen size below 900px */
 @media (max-width: 900px) {
+  /* Left Section */
   .main .main__left {
     margin-left: 3rem;
   }
+  /* Right Section */
   .main .main__right {
     margin-right: 3rem;
   }
 }
+
+/* Media Query for screen size below 750px */
 @media (max-width: 750px) {
   .main {
     flex-direction: column;
     align-items: center;
   }
+  /* Left Section */
   .main .main__left {
     margin: 12vh 10%;
     width: 100%;
     align-items: center;
     margin-bottom: -1vh;
   }
+  /* Right Section */
   .main .main__right {
     margin: auto;
     width: 70%;
     align-items: center;
   }
 }
+
+/* Media Query for screen size below 630px */
 @media (max-width: 630px) {
+  /* Left Section */
   .main .main__left {
     margin: 11vh 5% 0 5%;
   }
+  /* Right Section */
   .main .main__right {
     margin-top: 0;
   }

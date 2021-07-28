@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+// React Hooks
+import { useState } from "react";
+
+// Components
 import NavBarLinks from "./NavBarLinks";
-import { AiOutlineMenu } from "react-icons/ai";
+
+// CSS and Icons
 import navbarStyles from "../../styles/components/Navbar.module.css";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const NavbarMobileLinks = () => {
   const [open, setOpen] = useState(false);

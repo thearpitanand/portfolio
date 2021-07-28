@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import NavBarLinks from "./NavBarLinks";
-import { AiOutlineMenu } from "react-icons/ai";
+// CSS
 import navbarStyles from "../../styles/components/Navbar.module.css";
+
+// Components
+import NavBarLinks from "./NavBarLinks";
 
 const NavbarDesktopLinks = () => {
   return (

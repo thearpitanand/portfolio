@@ -1,13 +1,19 @@
+// React and React Hooks
 import React, { useEffect, useState } from "react";
+
+// Next Components
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+
+// Components
 import Navbar from "../components/Navbar/Navbar";
 import About from "../components/About/About";
+
 const Home = () => {
   const [main, setMain] = useState({});
   const [resume, setResume] = useState({});
   const [skills, setSkills] = useState({});
   const [portfolio, setPortfolio] = useState({});
+  
   useEffect(() => {
     fetch("/api/data")
       .then((res) => res.json())

@@ -1,56 +1,41 @@
-import aboutStyle from "../../styles/components/About.module.css";
+// Next Components
 import Image from "next/image";
-import mine from "../../public/mine.svg";
-import Typewriter from "typewriter-effect";
-import { typeWriterOption } from "./helper";
-import SocialLinks from "./SocialLinks";
 
-interface social {
-  name: string;
-  url: string;
-  className: string;
-}
+// css and svg
+import aboutStyle from "../../styles/components/About.module.css";
+import mine from "../../public/mine.svg";
+
+// Package
+import Typewriter from "typewriter-effect";
+
+// Helper
+import { typeWriterOption } from "./helper";
+
+// Components
+import SocialLinks from "./SocialLinks";
 
 interface main {
   name: string;
-  occupation: Array<string>;
   description: string;
-  image: string;
   bio: string;
   contactmessage: string;
   email: string;
   phone: string;
   address: Object;
   website: string;
-  resumedownload: string;
-  social: social;
 }
-
 type props = {
-  main: main;
+  main: any;
 };
 
 const About = (props: props) => {
-  const {
-    address,
-    bio,
-    contactmessage,
-    description,
-    email,
-    image,
-    name,
-    occupation,
-    phone,
-    resumedownload,
-    social,
-    website,
-  }: main = props.main;
+  const { name }: main = props.main;
 
   return (
     <section id="home">
       <div className={aboutStyle.main}>
         <div className={aboutStyle.main__left}>
-          <h1>Arpit Anand</h1>
+          <h1>{name}</h1>
           <h4 className={aboutStyle.occupation}>
             <p>{`I\'m`}</p>
             <Typewriter options={typeWriterOption} />
