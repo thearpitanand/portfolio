@@ -109,7 +109,7 @@
   }
   /* Right Section */
   .main .main__right {
-    margin: 20px 10%;
+    margin: auto 10%;
     align-items: center;
   }
 }
