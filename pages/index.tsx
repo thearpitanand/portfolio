@@ -24,10 +24,9 @@ const Home = () => {
         }
       });
   }, []);
-  const { description }: any = main;
   return (
     <React.Fragment>
-      <HeadContent description={description} />
+      <HeadContent description="I eat, sleep and breathe Code." />
       <div>
         <Navbar />
         <About main={main} />
