@@ -1,29 +1,60 @@
 .socialLink {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-    display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+}
+
+.socialLink li a {
+  margin: 0 5px 0 0;
+}
+
+.socialLink li a svg {
+  height: 25px;
+  width: 25px;
+}
+
+.socialLink .instagram:hover {
+  color: #fd1d1d;
+}
+.socialLink .facebook:hover {
+  color: #4267b2;
+}
+.socialLink .github:hover {
+  color: #333333;
+}
+.socialLink .unsplash:hover {
+  color: #000000;
+}
+.socialLink .twitter:hover {
+  color: #1da1f2;
+}
+.socialLink .linkedin:hover {
+  color: #0077b5;
+}
+
+@media (max-width: 750px) {
+  .socialLink li a svg {
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
   }
-  
-  .socialLink li a {
-    margin: 0 5px 0 0;
+  .socialLink .instagram {
+    color: #fd1d1d;
   }
-  
-  .socialLink .instagram:hover {
-      color: #FD1D1D;
+  .socialLink .facebook {
+    color: #4267b2;
   }
-  .socialLink .facebook:hover {
-      color: #4267B2;
+  .socialLink .github {
+    color: #333333;
   }
-  .socialLink .github:hover {
-      color: #333333;
+  .socialLink .unsplash {
+    color: #000000;
   }
-  .socialLink .unsplash:hover {
-      color: #000000;
+  .socialLink .twitter {
+    color: #1da1f2;
   }
-  .socialLink .twitter:hover {
-      color: #1DA1F2;
+  .socialLink .linkedin {
+    color: #0077b5;
   }
-  .socialLink .linkedin:hover {
-      color: #0077b5;
-  }
+}

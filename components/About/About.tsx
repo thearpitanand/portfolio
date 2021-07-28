@@ -23,7 +23,7 @@ interface main {
   address: Object;
   website: string;
   resumedownload: string;
-  social: string;
+  social: social;
 }
 
 type props = {
