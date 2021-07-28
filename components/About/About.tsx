@@ -13,6 +13,7 @@ import { typeWriterOption } from "./helper";
 
 // Components
 import SocialLinks from "./SocialLinks";
+import { useEffect } from "react";
 
 interface main {
   name: string;
@@ -41,6 +42,10 @@ const About = (props: props) => {
             <Typewriter options={typeWriterOption} />
           </h4>
           <SocialLinks />
+          <div className={aboutStyle.buttons}>
+            <a className={aboutStyle.resumeButton} href="/assets/pdf/resume.pdf" download>Resume</a>
+            <a className={aboutStyle.hireButton} href="#contact">Hire Me</a>
+          </div>
         </div>
         <div className={aboutStyle.main__right}>
           <Image src={mine} alt="coder" />

@@ -25,3 +25,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar{
+  width: 13px;
+  height: 13px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: #C2C2C2;
+  border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background: #B1B2B5;
+  }
+  ::-webkit-scrollbar-track{
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px 0px #F0F0F0;
+  }
