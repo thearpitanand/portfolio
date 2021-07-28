@@ -13,7 +13,6 @@ import { typeWriterOption } from "./helper";
 
 // Components
 import SocialLinks from "./SocialLinks";
-import { useEffect } from "react";
 
 interface main {
   name: string;

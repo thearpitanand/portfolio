@@ -106,24 +106,17 @@
     margin: 5vh 10%;
     width: 100%;
     align-items: center;
-    margin-bottom: -1vh;
   }
   /* Right Section */
   .main .main__right {
-    margin: 20px auto;
-    width: 70%;
+    margin: 20px 10%;
     align-items: center;
   }
 }
 /* Media Query for screen size below 630px */
 @media (max-width: 630px) {
-  /* Left Section */
-  .main .main__left {
-    margin: 11vh 5% 0 5%;
-  }
   /* Right Section */
   .main .main__right {
-    /* margin-top: 0; */
-    width: 80%;
+    width: 70%;
   }
 }
