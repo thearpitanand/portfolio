@@ -1,0 +1,33 @@
+.footer {
+  height: max-content;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.socialLinksDiv {
+  margin: 1rem auto 0;
+}
+.footer .footerText {
+  color: var(--natural-color);
+  font-size: 0.6rem;
+  font-weight: 200;
+  margin: 1rem auto 1.5rem;
+}
+
+
+@media (min-width: 750px) {
+  .footer .socialLinksDiv {
+    color: var(--natural-color);
+    margin-top: 2rem;
+  }
+  .footer .socialLinksDiv ul {
+    width: 30rem;
+    justify-content: space-evenly;
+  }
+  .footer .socialLinksDiv ul li a {
+    margin-right: 0;
+  }
+}

@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import About from "../components/About/About";
 import HeadContent from "../components/HeadContent/HeadContent";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   const [main, setMain] = useState({});
@@ -30,6 +31,7 @@ const Home = () => {
       <div>
         <Navbar />
         <About main={main} />
+        <Footer />
       </div>
     </React.Fragment>
   );
