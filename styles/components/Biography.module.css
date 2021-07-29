@@ -1,0 +1,60 @@
+.biography {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  height: max-content;
+}
+.biography .bioLeftDiv {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.biography .bioRightDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.biography .bioLeftDiv .profilepic {
+  margin: 2rem auto 2rem;
+  height: max-content;
+  width: max-content;
+}
+.biography .bioLeftDiv .profilepic div {
+  border: 5px solid var(--secondary-color);
+  border-radius: 50%;
+}
+.biography .bioLeftDiv .profilepic img {
+  border-radius: 50%;
+}
+.biography .bioRightDiv .description {
+  color: var(--natural-color);
+  width: 80%;
+  text-align: justify;
+  justify-items: center;
+  margin: 0.5rem auto 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.biography .bioRightDiv .bio {
+  color: var(--natural-color);
+  width: 80%;
+  text-align: justify;
+  justify-items: center;
+  margin: 0.5rem auto 2rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: 750px) {
+  .biography {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .biography .bioLeftDiv .profilepic {
+    margin-left: 3rem;
+  }
+}

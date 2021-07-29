@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 import About from "../components/About/About";
 import HeadContent from "../components/HeadContent/HeadContent";
 import Footer from "../components/Footer/Footer";
+import Biography from "../components/Biography/Biography";
 
 const Home = () => {
   const [main, setMain] = useState({});
@@ -31,6 +32,7 @@ const Home = () => {
       <div>
         <Navbar />
         <About main={main} />
+        <Biography main={main} />
         <Footer />
       </div>
     </React.Fragment>

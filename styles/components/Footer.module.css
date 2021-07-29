@@ -17,7 +17,6 @@
   margin: 1rem auto 1.5rem;
 }
 
-
 @media (min-width: 750px) {
   .footer .socialLinksDiv {
     color: var(--natural-color);
