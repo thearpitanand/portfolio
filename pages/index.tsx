@@ -8,31 +8,14 @@ import HeadContent from "../components/HeadContent/HeadContent";
 import Footer from "../components/Footer/Footer";
 import Biography from "../components/Biography/Biography";
 
-const Home = () => {
-  const [main, setMain] = useState({});
-  const [resume, setResume] = useState({});
-  const [skills, setSkills] = useState({});
-  const [portfolio, setPortfolio] = useState({});
-
-  useEffect(() => {
-    fetch("/api/data")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data) {
-          setMain(data.main);
-          setPortfolio(data.portfolio);
-          setResume(data.resume);
-          setSkills(data.skills);
-        }
-      });
-  }, []);
+const Home = ({ data }: any) => {
   return (
     <React.Fragment>
       <HeadContent description="I eat, sleep and breathe Code." />
       <div>
         <Navbar />
-        <About main={main} />
-        <Biography main={main} />
+        <About main={data.main} />
+        <Biography main={data.main} />
         <Footer />
       </div>
     </React.Fragment>
@@ -40,3 +23,14 @@ const Home = () => {
 };
 
 export default Home;
+
+// Fetching data
+export const getServerSideProps = async () => {
+  const res = await fetch(`http://localhost:3000/api/data`);
+  const data = await res.json();
+  return {
+    props: {
+      data,
+    },
+  };
+};
