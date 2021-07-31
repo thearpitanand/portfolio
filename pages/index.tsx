@@ -26,7 +26,7 @@ export default Home;
 
 // Fetching data
 export const getServerSideProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/data`);
+  const res = await fetch(`https://www.thearpitanand.com/api/data`);
   const data = await res.json();
   return {
     props: {
