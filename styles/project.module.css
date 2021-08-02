@@ -1,0 +1,11 @@
+.heading {
+  text-align: center;
+  margin: 1.5rem auto 1rem;
+  width: 80%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+
+

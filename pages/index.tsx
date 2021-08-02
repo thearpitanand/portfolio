@@ -1,6 +1,3 @@
-// React and React Hooks
-import React, { useEffect, useState } from "react";
-
 // Components
 import Navbar from "../components/Navbar/Navbar";
 import About from "../components/About/About";
@@ -10,7 +7,7 @@ import Biography from "../components/Biography/Biography";
 
 const Home = ({ data }: any) => {
   return (
-    <React.Fragment>
+    <>
       <HeadContent description="I eat, sleep and breathe Code." />
       <div>
         <Navbar />
@@ -18,7 +15,7 @@ const Home = ({ data }: any) => {
         <Biography main={data.main} />
         <Footer />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
@@ -26,7 +23,11 @@ export default Home;
 
 // Fetching data
 export const getServerSideProps = async () => {
-  const res = await fetch(`https://www.thearpitanand.com/api/data`);
+  // Turn localFetch true for local development mode.
+  const localFetch = false;
+  const res = localFetch
+    ? await fetch(`http://localhost:3000/api/data`)
+    : await fetch(`https://www.thearpitanand.com/api/data`);
   const data = await res.json();
   return {
     props: {

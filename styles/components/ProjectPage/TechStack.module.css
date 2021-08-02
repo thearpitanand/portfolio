@@ -1,0 +1,19 @@
+.title{
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.techStack{
+    /* width: 80%; */
+    display: flex;
+    flex-direction: row;
+    margin: 0.2rem auto 1rem;
+    flex-wrap: wrap;
+}
+
+.techStack .icon{
+    margin: 0.2rem 0.5rem;
+}
+
+

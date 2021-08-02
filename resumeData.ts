@@ -49,7 +49,7 @@ const resumeData = {
         onFront: true,
         image:
           "https://raw.githubusercontent.com/thearpitanand/event-booking-client/main/public/assets/Website_Screenshot/screenshot_website_01.png",
-        url: "eventing.thearpitanand.com",
+        url: "https://eventing.thearpitanand.com/",
         screenShot: [
           {
             websiteScreenshot:
@@ -74,29 +74,39 @@ const resumeData = {
           {
             for: "frontend",
             title: "React",
+            height:"40",
+            width:"60",
             iconLink:
-              "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png",
           },
           {
             for: "backend",
             title: "GraphQL",
+            height:"40",
+            width:"40",
             iconLink:
-              "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png",
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png",
           },
           {
             for: "backend",
             title: "Express",
+            height:"40",
+            width:"100",
             iconLink:
               "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
           },
           {
             for: "backend",
             title: "MongoDB",
+            height:"40",
+            width:"40",
             iconLink: "https://img.icons8.com/color/452/mongodb.png",
           },
           {
             for: "backend",
             title: "Node",
+            height:"40",
+            width:"60",
             iconLink:
               "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png",
           },
