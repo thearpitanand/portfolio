@@ -5,8 +5,8 @@
 }
 
 .techStack{
-    /* width: 80%; */
     display: flex;
+    align-items: center;
     flex-direction: row;
     margin: 0.2rem auto 1rem;
     flex-wrap: wrap;

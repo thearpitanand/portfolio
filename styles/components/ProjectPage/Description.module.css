@@ -69,4 +69,9 @@
     margin: 0.5rem 1rem auto;
     width: 60%;
   }
+  .gitHubButtons {
+    width: 300px;
+    margin-left: 0;
+    justify-content: space-between;
+  }
 }

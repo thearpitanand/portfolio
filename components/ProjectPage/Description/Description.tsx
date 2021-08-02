@@ -20,7 +20,7 @@ const Description = ({ project }: any) => {
               className={descriptionStyle.imageScreenshot}
               alt="Project Screenshot"
               width="640px"
-              height="300px"
+              height={!!project.imageHeight ? project.imageHeight : "300px"}
             />
           </a>
         </Link>
