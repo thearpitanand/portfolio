@@ -4,7 +4,7 @@
   font-size: 0.9rem;
 }
 .websiteScreenshot {
-  margin: 1rem auto;
+  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

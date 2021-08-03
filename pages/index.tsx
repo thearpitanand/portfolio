@@ -4,6 +4,8 @@ import About from "../components/About/About";
 import HeadContent from "../components/HeadContent/HeadContent";
 import Footer from "../components/Footer/Footer";
 import Biography from "../components/Biography/Biography";
+import Projects from "../components/Projects/Projects";
+
 
 const Home = ({ data }: any) => {
   return (
@@ -13,6 +15,7 @@ const Home = ({ data }: any) => {
         <Navbar />
         <About main={data.main} />
         <Biography main={data.main} />
+        <Projects projects={data.portfolio.projects} />
         <Footer />
       </div>
     </>

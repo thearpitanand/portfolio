@@ -1,0 +1,51 @@
+.projectBox {
+  cursor: pointer;
+  width: 25%;
+  transition: 0.3s;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.projectBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.projectBoxTitle {
+  text-align: left;
+  font-size: 0.9rem;
+  margin: 0.5rem auto auto;
+}
+.projectBoxUrl {
+  text-align: left;
+  font-size: 0.7rem;
+  color: gray;
+}
+.projectBoxTechStackTitle {
+  display: inline;
+  text-align: left;
+  font-size: 0.8rem;
+  margin: auto;
+  margin-right: 0.2rem;
+  font-weight: 500;
+}
+.projectBoxTechStackName {
+  display: inline;
+  text-align: left;
+  font-size: 0.8rem;
+  margin: auto;
+}
+
+/* Media Query for screen size above 1000px */
+@media screen and (max-width: 1000px) {
+  .projectBox {
+    width: 40%;
+  }
+}
+
+/* Media Query for screen size above 620px */
+@media screen and (max-width: 620px) {
+  .projectBox {
+    width: 80%;
+  }
+}
