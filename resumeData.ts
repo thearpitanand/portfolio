@@ -104,6 +104,7 @@ const resumeData = {
           },
           {
             for: "backend",
+            end: true,
             title: "Node",
             height: "39",
             width: "64",
@@ -163,6 +164,7 @@ const resumeData = {
           },
           {
             for: "backend",
+            end: true,
             title: "Firebase",
             height: "27",
             width: "96",
@@ -215,6 +217,7 @@ const resumeData = {
           },
           {
             for: "frontend",
+            end: true,
             title: "Tailwind CSS",
             height: "40",
             width: "40",
@@ -327,6 +330,7 @@ const resumeData = {
           },
           {
             for: "payment",
+            end: true,
             title: "Brain Tree",
             height: "9",
             width: "64",

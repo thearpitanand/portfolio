@@ -1,14 +1,13 @@
+// Next Js Components
 import Image from "next/image";
 import Link from "next/link";
 
+// CSS
 import projectBoxStyle from "../../styles/components/Projects/IndividualProject.module.css";
 
 const IndividualProject = ({ project }: any) => {
   return (
-    <Link
-      href={`/project?id=${project.id}`}
-      passHref
-    >
+    <Link href={`/project?id=${project.id}`} passHref>
       <div className={projectBoxStyle.projectBox}>
         <div className={projectBoxStyle.imageScreenshot}>
           <Image
@@ -30,7 +29,10 @@ const IndividualProject = ({ project }: any) => {
             <p
               key={techName.iconLink}
               className={projectBoxStyle.projectBoxTechStackName}
-            >{`${techName.title}, `}</p>
+            >
+              {`${techName.title}`}
+              {!!techName?.end ? "." : ", "}
+            </p>
           ))}
         </div>
       </div>
