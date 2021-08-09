@@ -1,11 +1,9 @@
 import Link from "next/link";
-import individualCertificationsStyle from "../../styles/components/Certifications/individualCertifications.module.css";
+import individualCertificationsStyle from "../../styles/components/Certifications/IndividualCertifications.module.css";
 
 const IndividualCertifications = ({ certificate }: any) => {
   return (
-    <div
-      className={individualCertificationsStyle.certificateCard}
-    >
+    <div className={individualCertificationsStyle.certificateCard}>
       <Link href={certificate.credentialURL} passHref>
         <a>
           <h4 className={individualCertificationsStyle.certificateCardHeading}>
