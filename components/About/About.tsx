@@ -1,5 +1,6 @@
 // Next Components
 import Image from "next/image";
+import Link from "next/link";
 
 // css and svg
 import aboutStyle from "../../styles/components/About.module.css";
@@ -43,7 +44,7 @@ const About = (props: props) => {
           <SocialLinks />
           <div className={aboutStyle.buttons}>
             <a className={aboutStyle.resumeButton} href="/assets/pdf/resume.pdf" download>Resume</a>
-            <a className={aboutStyle.hireButton} href="#contact">Hire Me</a>
+            <Link href="\#contactus"><a className={aboutStyle.hireButton}>Hire Me</a></Link>
           </div>
         </div>
         <div className={aboutStyle.main__right}>

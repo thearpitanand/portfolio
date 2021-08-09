@@ -21,10 +21,10 @@
   background: none;
   border-bottom: 1.5px solid gray;
 }
-.contact_form_first_name {
+/* .contact_form_first_name {
 }
 .contact_form_last_name {
-}
+} */
 .contact_form_email,
 .contact_form_number {
   padding: 10px 5px 10px 5px;
@@ -102,10 +102,4 @@
   100% {
     top: 0em;
   }
-}
-
-
-@media (min-width: 750px) {
-
-
 }

@@ -66,8 +66,8 @@ const ContactMeLeft = ({ api }: any) => {
           className={contactMeLeftStyle.contact_form_message}
           placeholder="Write Your message.. "
           name="message"
-          // rows={15}
-          // cols={30}
+          rows={10}
+          // cols={15}
         />
         <input
           type="submit"

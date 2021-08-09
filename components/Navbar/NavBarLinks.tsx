@@ -1,17 +1,33 @@
-const NavBarLinks = () => {
+import Link from "next/link";
+
+const NavBarLinks = ({ open, setOpen }: any) => {
+  const closeInPhone = () => {
+    if (typeof open !== "undefined") {
+      return setOpen(!open);
+    }
+    return;
+  };
   return (
     <ul>
       <li>
-        <a href="#home">Home</a>
+        <Link href="\#home">
+          <a onClick={closeInPhone}>Home</a>
+        </Link>
       </li>
       <li>
-        <a href="#stack">Stack</a>
+        <Link href="\#projects">
+          <a onClick={closeInPhone}>Projects</a>
+        </Link>
       </li>
       <li>
-        <a href="#projects">Projects</a>
+        <Link href="\#certifications">
+          <a onClick={closeInPhone}>Certifications</a>
+        </Link>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <Link href="\#contactus">
+          <a onClick={closeInPhone}>Contact Me</a>
+        </Link>
       </li>
     </ul>
   );

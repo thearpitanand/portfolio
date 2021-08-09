@@ -16,7 +16,7 @@ const NavbarMobileLinks = () => {
       <span>
         <AiOutlineMenu size="2rem" onClick={() => setOpen(!open)} />
       </span>
-      {open && <NavBarLinks />}
+      {open && <NavBarLinks open={open} setOpen={setOpen} />}
     </div>
   );
 };

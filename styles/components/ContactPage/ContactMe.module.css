@@ -29,11 +29,11 @@
 }
 
 @media (min-width: 750px) {
-  .contactUsSection {
-  }
+  /* .contactUsSection {
+  } */
   .containerContactPage {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     /* width: 100%; */
     margin: 1rem;
   }
