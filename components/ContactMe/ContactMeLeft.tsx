@@ -4,16 +4,14 @@ import emailjs from "emailjs-com";
 // css
 import contactMeLeftStyle from "../../styles/components/ContactPage/ContactMeLeft.module.css";
 
-// Api Keys
-import {
-  EmailJS_SERVICE_NAME,
-  EmailJS_TEMPLATE_NAME,
-  EmailJS_USER_NAME,
-} from "../../keys";
-
-const ContactMeLeft = () => {
+const ContactMeLeft = ({ api }: any) => {
   const sendEmail = (event: any) => {
     event.preventDefault();
+
+    // Api Keys
+    const { EmailJS_SERVICE_NAME, EmailJS_TEMPLATE_NAME, EmailJS_USER_NAME } =
+      api;
+
     emailjs
       .sendForm(
         `${EmailJS_SERVICE_NAME}`,

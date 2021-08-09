@@ -7,7 +7,7 @@ import Biography from "../components/Biography/Biography";
 import Projects from "../components/Projects/Projects";
 import ContactMe from "../components/ContactMe/ContactMe";
 
-const Home = ({ data }: any) => {
+const Home = ({ data, api }: any) => {
   return (
     <>
       <HeadContent description="I eat, sleep and breathe Code." />
@@ -16,7 +16,7 @@ const Home = ({ data }: any) => {
         <About main={data.main} />
         <Biography main={data.main} />
         <Projects projects={data.portfolio.projects} />
-        <ContactMe main={data.main} />
+        <ContactMe main={data.main} api={api} />
         <Footer />
       </div>
     </>
@@ -36,6 +36,11 @@ export const getServerSideProps = async () => {
   return {
     props: {
       data,
+      api: {
+        EmailJS_SERVICE_NAME: process.env.EmailJS_SERVICE_NAME,
+        EmailJS_TEMPLATE_NAME: process.env.EmailJS_TEMPLATE_NAME,
+        EmailJS_USER_NAME: process.env.EmailJS_USER_NAME,
+      },
     },
   };
 };
