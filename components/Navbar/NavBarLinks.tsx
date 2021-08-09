@@ -10,22 +10,22 @@ const NavBarLinks = ({ open, setOpen }: any) => {
   return (
     <ul>
       <li>
-        <Link href="\#home">
+        <Link href="/#home">
           <a onClick={closeInPhone}>Home</a>
         </Link>
       </li>
       <li>
-        <Link href="\#projects">
+        <Link href="/#projects">
           <a onClick={closeInPhone}>Projects</a>
         </Link>
       </li>
       <li>
-        <Link href="\#certifications">
+        <Link href="/#certifications">
           <a onClick={closeInPhone}>Certifications</a>
         </Link>
       </li>
       <li>
-        <Link href="\#contactus">
+        <Link href="/#contactus">
           <a onClick={closeInPhone}>Contact Me</a>
         </Link>
       </li>
