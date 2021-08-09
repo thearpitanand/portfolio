@@ -5,7 +5,7 @@ import HeadContent from "../components/HeadContent/HeadContent";
 import Footer from "../components/Footer/Footer";
 import Biography from "../components/Biography/Biography";
 import Projects from "../components/Projects/Projects";
-
+import ContactMe from "../components/ContactMe/ContactMe";
 
 const Home = ({ data }: any) => {
   return (
@@ -16,6 +16,7 @@ const Home = ({ data }: any) => {
         <About main={data.main} />
         <Biography main={data.main} />
         <Projects projects={data.portfolio.projects} />
+        <ContactMe main={data.main} />
         <Footer />
       </div>
     </>

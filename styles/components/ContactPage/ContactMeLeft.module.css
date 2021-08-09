@@ -1,0 +1,111 @@
+.contact_form_heading {
+  color: var(--secondary-color);
+}
+.contact_form {
+  display: flex;
+  flex-direction: column;
+}
+.contact_form_name_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact_form_first_name,
+.contact_form_last_name {
+  padding: 10px 5px 10px 5px;
+  width: 45%;
+  border: none;
+  margin: 1rem 0;
+  outline: none;
+  background: none;
+  border-bottom: 1.5px solid gray;
+}
+.contact_form_first_name {
+}
+.contact_form_last_name {
+}
+.contact_form_email,
+.contact_form_number {
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  outline: none;
+  background: none;
+  border-bottom: 1.5px solid gray;
+}
+.contact_form_message {
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  outline: none;
+  background: none;
+  border-bottom: 1.5px solid gray;
+}
+
+.contact_form_first_name::placeholder,
+.contact_form_last_name::placeholder,
+.contact_form_message::placeholder,
+.contact_form_number::placeholder,
+.contact_form_message::placeholder {
+  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+.contact_form_button {
+  padding: 0.5rem 2rem;
+  width: max-content;
+  border: 3px solid var(--secondary-color);
+  margin: 1rem auto 1rem 0.2rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-align: center;
+  transition: all 0.2s;
+  animation: btnBouncy 5s infinite linear;
+  position: relative;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+    cursor: pointer;
+}
+
+.contact_form_button:hover {
+  background-color: var(--secondary-color);
+  color: var(--natural-color);
+}
+
+@keyframes btnBouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+
+@media (min-width: 750px) {
+
+
+}

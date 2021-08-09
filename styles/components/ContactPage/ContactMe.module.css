@@ -1,0 +1,43 @@
+.contactUsSection {
+  background-color: var(--natural-color);
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  width: max-content;
+  margin: 2rem auto 0.5rem;
+  padding: 0 1rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: inherit;
+}
+.containerContactPage {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.leftDivContactPage {
+  padding: 1rem;
+  /* background: whitesmoke; */
+}
+.rightDivContactPage {
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-color);
+}
+
+@media (min-width: 750px) {
+  .contactUsSection {
+  }
+  .containerContactPage {
+    flex-direction: row;
+    justify-content: center;
+    /* width: 100%; */
+    margin: 1rem;
+  }
+.leftDivContactPage {
+width: 50%;
+}
+}
