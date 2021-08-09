@@ -38,6 +38,47 @@ const resumeData = {
     ],
   },
   skills: {},
+  certification: [
+    {
+      name: "Full Stack MERN Bootcamp",
+      issuingOrganization: "LearnCodeOnline.in",
+      issueDate: "May 2021",
+      credentialID: "42132425033224101056",
+      credentialURL:
+        "https://courses.learncodeonline.in/learn/certificate/4213242-50332",
+    },
+    {
+      name: "Python",
+      issuingOrganization: "GUVI Geek Networks, IITM Research Park",
+      issueDate: "April 2021",
+      credentialID: "8Z2wQe7JiX16596B19",
+      credentialURL: "https://www.guvi.in/certificate?id=8Z2wQe7JiX16596B19",
+    },
+    {
+      name: "React Js Bootcamp",
+      issuingOrganization: "LearnCodeOnline.in",
+      issueDate: "April 2021",
+      credentialID: "42132425363524101104",
+      credentialURL:
+        "https://courses.learncodeonline.in/learn/certificate/4213242-53635",
+    },
+    {
+      name: "SEO Specialist",
+      issuingOrganization: "Udemy",
+      issueDate: "June 2020",
+      credentialID: "UC-91e34f18-e81e-40af-9ed2-7ce6683c5af8",
+      credentialURL:
+        "https://udemy-certificate.s3.amazonaws.com/image/UC-91e34f18-e81e-40af-9ed2-7ce6683c5af8.jpg",
+    },
+    {
+      name: "Python",
+      issuingOrganization: "Udemy",
+      issueDate: "March 2020",
+      credentialID: "UC-0356d92d-cea9-40c4-90d1-2b3cb0d6c4f9",
+      credentialURL:
+        "https://udemy-certificate.s3.amazonaws.com/image/UC-0356d92d-cea9-40c4-90d1-2b3cb0d6c4f9.jpg",
+    },
+  ],
   portfolio: {
     projects: [
       {
