@@ -1,0 +1,24 @@
+.certificationsSection {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  /* height: max-content; */
+}
+.heading {
+  color: var(--natural-color);
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--natural-color);
+}
+.certificationsSectionContainer {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}

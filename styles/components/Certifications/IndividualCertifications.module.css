@@ -1,0 +1,46 @@
+.certificateCard {
+  margin: 1rem;
+  color: var(--natural-color);
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  width: 25%;
+  transition: 0.3s;
+}
+.certificateCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.certificateCardHeading {
+  margin: auto;
+  font-weight: 200;
+}
+.certificateCardIssuingOrganization {
+  margin: 0.2rem auto;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.certificateCardIssueDate {
+  margin: auto;
+  font-weight: 500;
+  margin: 0.2rem auto;
+}
+.certificateCardLink {
+  margin: 0.2rem auto;
+  font-size: 0.6rem;
+}
+
+/* Media Query for screen size above 1000px */
+@media screen and (max-width: 1000px) {
+  .certificateCard {
+    width: 40%;
+  }
+}
+
+/* Media Query for screen size above 620px */
+@media screen and (max-width: 620px) {
+  .certificateCard {
+    width: 80%;
+  }
+}

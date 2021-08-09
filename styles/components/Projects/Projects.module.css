@@ -6,14 +6,12 @@
   padding: 1rem;
 }
 .projectTitle {
-  width: max-content;
   margin: 1rem auto;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   letter-spacing: 0.2rem;
   font-weight: 500;
   border-bottom: 1px solid var(--primary-color);
-  padding-bottom: inherit;
 }
 .projectsBlock {
   width: 100%;

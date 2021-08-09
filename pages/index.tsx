@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import Biography from "../components/Biography/Biography";
 import Projects from "../components/Projects/Projects";
 import ContactMe from "../components/ContactMe/ContactMe";
+import Certifications from "../components/Certifications/Certifications";
 
 const Home = ({ data, api }: any) => {
   return (
@@ -16,6 +17,7 @@ const Home = ({ data, api }: any) => {
         <About main={data.main} />
         <Biography main={data.main} />
         <Projects projects={data.portfolio.projects} />
+        <Certifications certification={data.certification} />
         <ContactMe main={data.main} api={api} />
         <Footer />
       </div>
