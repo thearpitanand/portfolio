@@ -21,7 +21,7 @@ const HeadContent = ({ description }: props) => {
       />
       <meta
         name="image"
-        content="https://raw.githubusercontent.com/thearpitanand/portfolio/main/public/assets/images/ogimage.png"
+        content="/assets/images/ogimage.png"
       />
       {/* Twitter */}
       <meta name="twitter:card" content="summary" />
@@ -30,18 +30,18 @@ const HeadContent = ({ description }: props) => {
       <meta name="twitter:site" content="@the_arpitanand" />
       <meta
         name="twitter:image:src"
-        content="https://raw.githubusercontent.com/thearpitanand/portfolio/main/public/assets/images/ogimage.png"
+        content="/assets/images/ogimage.png"
       />
       {/* Open Graph general (Facebook, Pinterest & Google+) */}
-      <meta name="og:title" content="thearpitanand" />
-      <meta name="og:description" content={description} />
+      <meta property="og:title" content="thearpitanand" />
+      <meta property="og:description" content={description} />
       <meta
-        name="og:image"
-        content="https://raw.githubusercontent.com/thearpitanand/portfolio/main/public/assets/images/ogimage.png"
+        property="og:image"
+        content="/assets/images/ogimage.png"
       />
-      <meta name="og:url" content="https://www.thearpitanand.com" />
-      <meta name="og:site_name" content="thearpitanand" />
-      <meta name="og:type" content="website" />
+      <meta property="og:url" content="https://www.thearpitanand.com" />
+      <meta property="og:site_name" content="thearpitanand" />
+      <meta property="og:type" content="website" />
     </Head>
   );
 };
