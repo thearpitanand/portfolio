@@ -23,12 +23,12 @@ const ContactMeRight = ({ main }: any) => {
         <p className={contactMeRightStyle.textEmail}>{`${main.email}`}</p>
       </div>
       {/* Phone Number */}
-      <div className={contactMeRightStyle.mobilenumber}>
+      {/* <div className={contactMeRightStyle.mobilenumber}>
         <IoCall className={contactMeRightStyle.mobilenumberLogo} />
         <p
           className={contactMeRightStyle.textMobilenumber}
         >{`${main.mobilenumber}`}</p>
-      </div>
+      </div> */}
     </>
   );
 };
