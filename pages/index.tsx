@@ -9,7 +9,7 @@ import ContactMe from "../components/ContactMe/ContactMe";
 import Certifications from "../components/Certifications/Certifications";
 import { GetServerSideProps } from "next";
 
-const Home = ({ data, api }: any) => {
+const Home = ({ data, api }: any): JSX.Element => {
   console.log({ data });
   return (
     <>
@@ -18,8 +18,8 @@ const Home = ({ data, api }: any) => {
         <Navbar />
         <About main={data.main} />
         <Biography main={data.main} />
-        <Projects projects={data.portfolio.projects} />
-        <Certifications certification={data.certification} />
+        <Projects portfolio={data.portfolio} />
+        {/* <Certifications certification={data.certification} /> */}
         <ContactMe main={data.main} />
         <Footer />
       </div>
