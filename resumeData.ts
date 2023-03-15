@@ -2,7 +2,8 @@ const resumeData = {
   main: {
     name: "Chandani Anand",
     mobileNumber: "1234567890",
-    profilepic: "/assets/images/profilepic.png",
+    profilepic:
+      "https://media.licdn.com/dms/image/C4E03AQGHpWxUU2FYPQ/profile-displayphoto-shrink_800_800/0/1602072645079?e=2147483647&v=beta&t=Rd6i0EqWqqkbnixH1wY4wSDQTtjKTf2gTxCvrsvGjd8",
     description: "I eat, sleep and breathe Code.",
     bio: "Hi there! I am self taught web developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. ",
     fullbio:
