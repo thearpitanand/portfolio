@@ -1,10 +1,9 @@
 .contactUsSection {
-  background-color: var(--natural-color);
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
 }
 .heading {
-  width: max-content;
   margin: 2rem auto 0.5rem;
   padding: 0 1rem;
   text-align: center;
@@ -37,7 +36,7 @@
     /* width: 100%; */
     margin: 1rem;
   }
-.leftDivContactPage {
-width: 50%;
-}
+  .leftDivContactPage {
+    width: 50%;
+  }
 }

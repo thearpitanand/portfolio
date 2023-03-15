@@ -1,6 +1,7 @@
 const resumeData = {
   main: {
-    name: "Arpit Anand",
+    name: "Chandani Anand",
+    mobileNumber: "1234567890",
     profilepic: "/assets/images/profilepic.png",
     description: "I eat, sleep and breathe Code.",
     bio: "Hi there! I am self taught web developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. ",

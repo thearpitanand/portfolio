@@ -10,9 +10,9 @@ const ContactMe = ({ main, api }: any) => {
     <section id="contactus" className={contactMeStyle.contactUsSection}>
       {/* <h2 className={contactMeStyle.heading}>Contact Us</h2> */}
       <div className={contactMeStyle.containerContactPage}>
-        <div className={contactMeStyle.leftDivContactPage}>
+        {/* <div className={contactMeStyle.leftDivContactPage}>
           <ContactMeLeft api={api} />
-        </div>
+        </div> */}
         <div className={contactMeStyle.rightDivContactPage}>
           <ContactMeRight main={main} />
         </div>
