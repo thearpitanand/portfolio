@@ -1,10 +1,10 @@
 // Next Js Components
 import Image from "next/image";
 import Link from "next/link";
-import { RedirectionCardProjectInterface } from "../../interface/RedirectionCardProject.interface";
+import { RedirectionCardProjectInterface } from "../../../../interface/RedirectionCardProject.interface";
 
 // CSS
-import projectBoxStyle from "../../styles/components/Projects/RedirectionCard.module.css";
+import projectBoxStyle from "../../../../styles/components/Projects/RedirectionCard.module.css";
 
 interface Props {
   project: RedirectionCardProjectInterface;

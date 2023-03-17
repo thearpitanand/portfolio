@@ -10,7 +10,7 @@ import Certifications from "../components/Certifications/Certifications";
 import { GetServerSideProps } from "next";
 
 const Home = ({ data, api }: any): JSX.Element => {
-  console.log({ data });
+
   return (
     <>
       <HeadContent description="I eat, sleep and breathe Code." />

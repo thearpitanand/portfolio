@@ -5,9 +5,10 @@ import projectStyle from "../../styles/components/Projects/Projects.module.css";
 import { useState } from "react";
 
 // Components
-import RedirectionCard from "./RedirectionCard";
+import RedirectionCard from "./components/Cards/RedirectionCard";
 import { Portfolio } from "../../interface/Portfolio.interface";
 import { RedirectionCardProjectInterface } from "../../interface/RedirectionCardProject.interface";
+import Project from "./components/Project";
 
 interface Props {
   portfolio: Portfolio;
@@ -31,56 +32,11 @@ const Projects = ({ portfolio }: Props): JSX.Element => {
     )
   );
 
-  console.log({ portfolio });
-
-  const renderWebsiteUIUXDesign = (): JSX.Element => {
-    return (
-      <div className={projectStyle.projectSection}>
-        <h2 className={projectStyle.projectTitle}>Web UI/UX Designs</h2>
-        <div className={projectStyle.projectsBlock}>
-          {webDesignOnFront.map((project: RedirectionCardProjectInterface) => (
-            <RedirectionCard project={project} key={project.id} />
-          ))}
-        </div>
-      </div>
-    );
-  };
-
-  const renderBrandGuideline = (): JSX.Element => {
-    return (
-      <div className={projectStyle.projectSection}>
-        <h2 className={projectStyle.projectTitle}>Brand Guideline</h2>
-        <div className={projectStyle.projectsBlock}>
-          {brandGuidelineOnFront.map(
-            (project: RedirectionCardProjectInterface) => (
-              <RedirectionCard project={project} key={project.id} />
-            )
-          )}
-        </div>
-      </div>
-    );
-  };
-
-  const renderPresentation = (): JSX.Element => {
-    return (
-      <div className={projectStyle.projectSection}>
-        <h2 className={projectStyle.projectTitle}>Presentations</h2>
-        <div className={projectStyle.projectsBlock}>
-          {presentationOnFront.map(
-            (project: RedirectionCardProjectInterface) => (
-              <RedirectionCard project={project} key={project.id} />
-            )
-          )}
-        </div>
-      </div>
-    );
-  };
-
   return (
     <section id="projects">
-      {renderWebsiteUIUXDesign()}
-      {renderBrandGuideline()}
-      {renderPresentation()}
+      <Project title={`Web UI/UX Designs`} projects={webDesignOnFront} />
+      <Project title={`Brand Guideline`} projects={brandGuidelineOnFront} />
+      <Project title={`Presentations`} projects={presentationOnFront} />
     </section>
   );
 };

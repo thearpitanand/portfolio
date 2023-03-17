@@ -43,8 +43,16 @@ const About = (props: props) => {
           </h4>
           <SocialLinks />
           <div className={aboutStyle.buttons}>
-            <a className={aboutStyle.resumeButton} href="/assets/pdf/resume.pdf" download>Resume</a>
-            <Link href="\#contactus"><a className={aboutStyle.hireButton}>Hire Me</a></Link>
+            <a
+              className={aboutStyle.resumeButton}
+              href="/assets/pdf/resume.pdf"
+              download
+            >
+              Resume
+            </a>
+            <Link href="\#contactus">
+              <a className={aboutStyle.hireButton}>Hire Me</a>
+            </Link>
           </div>
         </div>
         <div className={aboutStyle.main__right}>
