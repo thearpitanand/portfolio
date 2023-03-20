@@ -32,11 +32,17 @@ const Projects = ({ portfolio }: Props): JSX.Element => {
       (project: RedirectionCardProjectInterface) => project.onFront
     )
   );
+  const [logoOnFront] = useState(
+    portfolio.logos.filter(
+      (project: RedirectionCardProjectInterface) => project.onFront
+    )
+  );
 
   return (
     <section id="projects">
       <Project title={`Web UI/UX Designs`} projects={webDesignOnFront} />
       <Project title={`Brand Guideline`} projects={brandGuidelineOnFront} />
+      <Project title={`Logo`} projects={logoOnFront} />
       <Project title={`Presentations`} projects={presentationOnFront} />
       {/* <ImageGalleryView isOpen /> */}
     </section>
