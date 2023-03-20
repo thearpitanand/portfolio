@@ -13,7 +13,7 @@ const Home = ({ data, api }: any): JSX.Element => {
 
   return (
     <>
-      <HeadContent description="I eat, sleep and breathe Code." />
+      <HeadContent description="Graphics Designer" />
       <div>
         <Navbar />
         <About main={data.main} />

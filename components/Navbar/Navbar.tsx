@@ -11,9 +11,9 @@ import NavbarMobileLinks from "./NavbarMobileLinks";
 const Navbar = () => {
   return (
     <nav className={navbarStyles.navbar}>
-      <Link href="https://www.thearpitanand.com/">
+      <Link href="/#">
         <a>
-          <h1 className={navbarStyles.main_logo}>thearpitanand</h1>
+          <h1 className={navbarStyles.main_logo}>Chandni Anand</h1>
         </a>
       </Link>
       <NavbarMobileLinks />

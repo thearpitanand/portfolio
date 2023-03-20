@@ -1,10 +1,6 @@
 export const typeWriterOption = {
-    strings: [
-      "Full Stack Developer",
-      "Front End Developer",
-      "Back End Developer",
-    ],
-    delay: 75,
-    autoStart: true,
-    loop: true,
-  };
+  strings: ["UI/UX Designer", "Graphic Designer"],
+  delay: 75,
+  autoStart: true,
+  loop: true,
+};

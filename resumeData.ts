@@ -9,7 +9,7 @@ const resumeData = {
     fullbio:
       "Experienced Lead Graphic Designer with Ui/Ux skill a demonstrated history of working in the information technology, product management and services industry. Skilled in Management, Leadership, Project Management, User Experience Design (UED), and Customer Service. Strong arts and design professional Diploma from Arena Animation.",
     contactmessage: "Get in touch with me together we can make changes.",
-    email: "chandani.anand286@gmail.com",
+    email: "chandani.anand786@gmail.com",
     address: {
       street: "Mayur Residency Extension",
       city: "Lucknow",
