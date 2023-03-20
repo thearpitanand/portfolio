@@ -28,7 +28,8 @@ const resumeData = {
         description: "",
         onFront: true,
         imageHeight: "300px",
-        image: "",
+        image:
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/fogg.jpeg",
         url: "https://www.figma.com/proto/GTSytPZC22FaUsXEhV0g2T/Fogg?node-id=1-14&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A237",
       },
       {
@@ -38,7 +39,8 @@ const resumeData = {
         description: "",
         onFront: true,
         imageHeight: "300px",
-        image: "",
+        image:
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/beardo.jpeg",
         url: "https://www.figma.com/proto/hn6DOIM23xGJgtB9DiMLM3/Beardo?node-id=1-119&starting-point-node-id=1%3A429",
       },
       {
@@ -48,7 +50,8 @@ const resumeData = {
         description: "",
         onFront: true,
         imageHeight: "300px",
-        image: "",
+        image:
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/4700BC.jpeg",
         url: "https://www.figma.com/proto/rVjHRX15O6usbb1ZBrZjOo/4700-bc?node-id=1-608&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A608",
       },
       {
@@ -58,7 +61,8 @@ const resumeData = {
         description: "",
         onFront: true,
         imageHeight: "300px",
-        image: "",
+        image:
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/chicago-valut.jpeg",
         url: "https://www.figma.com/proto/38IcbzJ3WLofRS55aqBF6Y/chicago?node-id=1-2",
       },
       {
@@ -68,7 +72,8 @@ const resumeData = {
         description: "",
         onFront: true,
         imageHeight: "300px",
-        image: "",
+        image:
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/no-sympathy-card.jpeg",
         url: "https://www.figma.com/proto/bZfwJMPSiGx6LQJwjhiEEs/ns-card?node-id=1-203",
       },
       {
@@ -78,7 +83,8 @@ const resumeData = {
         description: "",
         onFront: true,
         imageHeight: "300px",
-        image: "",
+        image:
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/fusion-fitness.jpeg",
         url: "https://www.figma.com/proto/jVQ2KKFltlSNO0L0jjuoXg/FItness-Fusion?node-id=389-2930&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=300%3A3033",
       },
       {
@@ -88,7 +94,8 @@ const resumeData = {
         description: "",
         onFront: true,
         imageHeight: "300px",
-        image: "",
+        image:
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/h-s-johnson.jpeg",
         url: "https://www.figma.com/proto/89dFNkh0dqJxfVXomkO9xs/HSJOHNSON(1946)?node-id=1-3&starting-point-node-id=1%3A3",
       },
     ],
@@ -96,51 +103,25 @@ const resumeData = {
     brandGuideline: [
       {
         id: "0",
-        shorttitle: "Eventing",
-        title: "Eventing - Event Management Web Application",
-        description:
-          "Eventing ( Event Management Website ) is the application of project management to the creation and development of small and/or large-scale personal or corporate events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions.",
+        shorttitle: "CedCommerce-Branding-SM",
+        title: "CedCommerce-Branding-SM - Guideline",
+        description: "",
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/event-booking-client/main/public/assets/Website_Screenshot/screenshot_website_01.png",
-        url: "https://eventing.thearpitanand.com/",
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/brand-guideline/CedCommerce-Branding-SM.jpeg",
+        url: "https://drive.google.com/file/d/1so8QlNcfVLDfOIYmf4xImyfmTzkXE_Sl/view",
       },
       {
-        id: "1",
-        shorttitle: "Eventing",
-        title: "Eventing - Event Management Web Application",
-        description:
-          "Eventing ( Event Management Website ) is the application of project management to the creation and development of small and/or large-scale personal or corporate events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions.",
+        id: "0",
+        shorttitle: "Magenative Brand Guide Line",
+        title: "Magenative Brand - Guideline",
+        description: "",
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/event-booking-client/main/public/assets/Website_Screenshot/screenshot_website_01.png",
-        url: "https://raw.githubusercontent.com/thearpitanand/event-booking-client/main/public/assets/Website_Screenshot/screenshot_website_01.png",
-      },
-      {
-        id: "2",
-        shorttitle: "Eventing",
-        title: "Eventing - Event Management Web Application",
-        description:
-          "Eventing ( Event Management Website ) is the application of project management to the creation and development of small and/or large-scale personal or corporate events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions.",
-        onFront: true,
-        imageHeight: "300px",
-        image:
-          "https://raw.githubusercontent.com/thearpitanand/event-booking-client/main/public/assets/Website_Screenshot/screenshot_website_01.png",
-        url: "https://eventing.thearpitanand.com/",
-      },
-      {
-        id: "3",
-        shorttitle: "Eventing",
-        title: "Eventing - Event Management Web Application",
-        description:
-          "Eventing ( Event Management Website ) is the application of project management to the creation and development of small and/or large-scale personal or corporate events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions.",
-        onFront: true,
-        imageHeight: "300px",
-        image:
-          "https://raw.githubusercontent.com/thearpitanand/event-booking-client/main/public/assets/Website_Screenshot/screenshot_website_01.png",
-        url: "https://eventing.thearpitanand.com/",
+          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/brand-guideline/Magenative-Branding-SM.jpeg",
+        url: "https://drive.google.com/file/d/1Mgl4tyhvmBVQv44I0HxS-RbFffQltxoP/view?usp=sharing",
       },
     ],
 
