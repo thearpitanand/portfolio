@@ -38,7 +38,7 @@ const Projects = ({ portfolio }: Props): JSX.Element => {
       <Project title={`Web UI/UX Designs`} projects={webDesignOnFront} />
       <Project title={`Brand Guideline`} projects={brandGuidelineOnFront} />
       <Project title={`Presentations`} projects={presentationOnFront} />
-      <ImageGalleryView isOpen />
+      {/* <ImageGalleryView isOpen /> */}
     </section>
   );
 };

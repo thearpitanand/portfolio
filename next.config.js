@@ -10,6 +10,7 @@ module.exports = {
       "material-ui.com",
       "www.markusantonwolf.com",
       "media.licdn.com",
+      "www.figma.com",
     ],
   },
 };
