@@ -29,7 +29,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/fogg.jpeg",
+          "/assets/images/webdesigs/fogg.jpeg",
         url: "https://www.figma.com/proto/GTSytPZC22FaUsXEhV0g2T/Fogg?node-id=1-14&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A237",
       },
       {
@@ -40,7 +40,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/beardo.jpeg",
+          "/assets/images/webdesigs/beardo.jpeg",
         url: "https://www.figma.com/proto/hn6DOIM23xGJgtB9DiMLM3/Beardo?node-id=1-119&starting-point-node-id=1%3A429",
       },
       {
@@ -51,7 +51,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/4700BC.jpeg",
+          "/assets/images/webdesigs/4700BC.jpeg",
         url: "https://www.figma.com/proto/rVjHRX15O6usbb1ZBrZjOo/4700-bc?node-id=1-608&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A608",
       },
       {
@@ -62,7 +62,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/chicago-valut.jpeg",
+          "/assets/images/webdesigs/chicago-valut.jpeg",
         url: "https://www.figma.com/proto/38IcbzJ3WLofRS55aqBF6Y/chicago?node-id=1-2",
       },
       {
@@ -73,7 +73,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/no-sympathy-card.jpeg",
+          "/assets/images/webdesigs/no-sympathy-card.jpeg",
         url: "https://www.figma.com/proto/bZfwJMPSiGx6LQJwjhiEEs/ns-card?node-id=1-203",
       },
       {
@@ -84,7 +84,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/fusion-fitness.jpeg",
+          "/assets/images/webdesigs/fusion-fitness.jpeg",
         url: "https://www.figma.com/proto/jVQ2KKFltlSNO0L0jjuoXg/FItness-Fusion?node-id=389-2930&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=300%3A3033",
       },
       {
@@ -95,7 +95,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/webdesigs/h-s-johnson.jpeg",
+          "/assets/images/webdesigs/h-s-johnson.jpeg",
         url: "https://www.figma.com/proto/89dFNkh0dqJxfVXomkO9xs/HSJOHNSON(1946)?node-id=1-3&starting-point-node-id=1%3A3",
       },
     ],
@@ -109,7 +109,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/brand-guideline/CedCommerce-Branding-SM.jpeg",
+          "/assets/images/brand-guideline/CedCommerce-Branding-SM.jpeg",
         url: "https://drive.google.com/file/d/1so8QlNcfVLDfOIYmf4xImyfmTzkXE_Sl/view",
       },
       {
@@ -120,7 +120,7 @@ const resumeData = {
         onFront: true,
         imageHeight: "300px",
         image:
-          "https://raw.githubusercontent.com/thearpitanand/portfolio/build/portfolio-graphic-v1/public/assets/images/brand-guideline/Magenative-Branding-SM.jpeg",
+          "/assets/images/brand-guideline/Magenative-Branding-SM.jpeg",
         url: "https://drive.google.com/file/d/1Mgl4tyhvmBVQv44I0HxS-RbFffQltxoP/view?usp=sharing",
       },
     ],
