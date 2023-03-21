@@ -9,8 +9,7 @@ import ContactMe from "../components/ContactMe/ContactMe";
 import Certifications from "../components/Certifications/Certifications";
 import { GetServerSideProps } from "next";
 
-const Home = ({ data, api }: any): JSX.Element => {
-
+const Home = ({ data }: any): JSX.Element => {
   return (
     <>
       <HeadContent description="Graphics Designer" />
@@ -32,7 +31,6 @@ export default Home;
 // Fetching data
 export const getServerSideProps: GetServerSideProps<{
   data: unknown;
-  api: unknown;
 }> = async (context) => {
   const hostname = context.req.headers.host || "";
   let res = null;
@@ -44,11 +42,6 @@ export const getServerSideProps: GetServerSideProps<{
   return {
     props: {
       data,
-      api: {
-        EmailJS_SERVICE_NAME: process.env.EmailJS_SERVICE_NAME,
-        EmailJS_TEMPLATE_NAME: process.env.EmailJS_TEMPLATE_NAME,
-        EmailJS_USER_NAME: process.env.EmailJS_USER_NAME,
-      },
     },
   };
 };
