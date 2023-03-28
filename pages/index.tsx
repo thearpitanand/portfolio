@@ -36,7 +36,7 @@ export const getServerSideProps: GetServerSideProps<{
   let res = null;
   if (hostname.includes("localhost"))
     res = await fetch(`http://localhost:3000/api/data`);
-  else res = await fetch(`https://www.thearpitanand.com/api/data`);
+  else res = await fetch(`https://chandni-portfolio-v1.netlify.app/api/data`);
 
   const data = !!res ? await res.json() : {};
   return {
