@@ -6,11 +6,9 @@ import { IoCall, IoLocationOutline, IoMail } from "react-icons/io5";
 
 const ContactMeRight = ({ main }: any) => {
   console.log({ main });
-  return (
-    <>
-      <h3 className={contactMeRightStyle.heading}>Contact Info</h3>
 
-      {/* Location */}
+  const renderAddress = () => {
+    return (
       <div className={contactMeRightStyle.location}>
         <IoLocationOutline className={contactMeRightStyle.locationLogo} />
         <div className={contactMeRightStyle.textAddress}>
@@ -19,6 +17,11 @@ const ContactMeRight = ({ main }: any) => {
           <p>{`${main.address.zip}`}</p>
         </div>
       </div>
+    );
+  };
+  return (
+    <>
+      <h3 className={contactMeRightStyle.heading}>Contact Info</h3>
 
       {/* E - mail */}
       <div className={contactMeRightStyle.email}>
