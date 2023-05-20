@@ -5,22 +5,46 @@ import projectStyle from "../../styles/components/Projects/Projects.module.css";
 import { useState } from "react";
 
 // Components
-import IndividualProject from "./IndividualProject";
+import RedirectionCard from "./components/Cards/RedirectionCard";
+import { Portfolio } from "../../interface/Portfolio.interface";
+import { RedirectionCardProjectInterface } from "../../interface/RedirectionCardProject.interface";
+import Project from "./components/Project";
+import ImageGalleryView from "../ImageGalleryView/ImageGalleryView";
 
-const Projects = ({ projects }: any) => {
-  const [projectOnFront] = useState(
-    projects.filter((project: any) => project.onFront)
+interface Props {
+  portfolio: Portfolio;
+}
+
+const Projects = ({ portfolio }: Props): JSX.Element => {
+  // State Filtering to show value
+  const [webDesignOnFront] = useState(
+    portfolio.webDesign.filter(
+      (project: RedirectionCardProjectInterface) => project.onFront
+    )
   );
+  const [brandGuidelineOnFront] = useState(
+    portfolio.brandGuideline.filter(
+      (project: RedirectionCardProjectInterface) => project.onFront
+    )
+  );
+  const [presentationOnFront] = useState(
+    portfolio.presentation.filter(
+      (project: RedirectionCardProjectInterface) => project.onFront
+    )
+  );
+  const [logoOnFront] = useState(
+    portfolio.logos.filter(
+      (project: RedirectionCardProjectInterface) => project.onFront
+    )
+  );
+
   return (
     <section id="projects">
-      <div className={projectStyle.projectSection}>
-        <h2 className={projectStyle.projectTitle}>Projects</h2>
-        <div className={projectStyle.projectsBlock}>
-          {projectOnFront.map((project: any) => (
-            <IndividualProject project={project} key={project.id} />
-          ))}
-        </div>
-      </div>
+      <Project title={`Web UI/UX Designs`} projects={webDesignOnFront} />
+      <Project title={`Brand Guideline`} projects={brandGuidelineOnFront} />
+      <Project title={`Logo`} projects={logoOnFront} />
+      <Project title={`Presentations`} projects={presentationOnFront} />
+      {/* <ImageGalleryView isOpen /> */}
     </section>
   );
 };

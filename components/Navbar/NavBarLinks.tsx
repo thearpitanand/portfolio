@@ -19,11 +19,11 @@ const NavBarLinks = ({ open, setOpen }: any) => {
           <a onClick={closeInPhone}>Projects</a>
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="/#certifications">
           <a onClick={closeInPhone}>Certifications</a>
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link href="/#contactus">
           <a onClick={closeInPhone}>Contact Me</a>

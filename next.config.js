@@ -9,6 +9,8 @@ module.exports = {
       "github.com",
       "material-ui.com",
       "www.markusantonwolf.com",
+      "media.licdn.com",
+      "www.figma.com",
     ],
   },
 };

@@ -41,10 +41,18 @@ const About = (props: props) => {
             <p>{`I\'m`}</p>
             <Typewriter options={typeWriterOption} />
           </h4>
-          <SocialLinks />
+          {/* <SocialLinks /> */}
           <div className={aboutStyle.buttons}>
-            <a className={aboutStyle.resumeButton} href="/assets/pdf/resume.pdf" download>Resume</a>
-            <Link href="\#contactus"><a className={aboutStyle.hireButton}>Hire Me</a></Link>
+            <a
+              className={aboutStyle.resumeButton}
+              href="/assets/pdf/resume.pdf"
+              download
+            >
+              Resume
+            </a>
+            {/* <Link href="\#contactus">
+              <a className={aboutStyle.hireButton}>Hire Me</a>
+            </Link> */}
           </div>
         </div>
         <div className={aboutStyle.main__right}>

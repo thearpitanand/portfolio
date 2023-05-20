@@ -5,10 +5,10 @@ import contactMeRightStyle from "../../styles/components/ContactPage/ContactMeRi
 import { IoCall, IoLocationOutline, IoMail } from "react-icons/io5";
 
 const ContactMeRight = ({ main }: any) => {
-  return (
-    <>
-      <h3 className={contactMeRightStyle.heading}>Contact Info</h3>
-      {/* Location */}
+  console.log({ main });
+
+  const renderAddress = () => {
+    return (
       <div className={contactMeRightStyle.location}>
         <IoLocationOutline className={contactMeRightStyle.locationLogo} />
         <div className={contactMeRightStyle.textAddress}>
@@ -17,18 +17,25 @@ const ContactMeRight = ({ main }: any) => {
           <p>{`${main.address.zip}`}</p>
         </div>
       </div>
+    );
+  };
+  return (
+    <>
+      <h3 className={contactMeRightStyle.heading}>Contact Info</h3>
+
       {/* E - mail */}
       <div className={contactMeRightStyle.email}>
         <IoMail className={contactMeRightStyle.emailLogo} />
         <p className={contactMeRightStyle.textEmail}>{`${main.email}`}</p>
       </div>
+
       {/* Phone Number */}
-      {/* <div className={contactMeRightStyle.mobilenumber}>
+      <div className={contactMeRightStyle.mobilenumber}>
         <IoCall className={contactMeRightStyle.mobilenumberLogo} />
         <p
           className={contactMeRightStyle.textMobilenumber}
-        >{`${main.mobilenumber}`}</p>
-      </div> */}
+        >{`${main.mobileNumber}`}</p>
+      </div>
     </>
   );
 };
