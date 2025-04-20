@@ -105,13 +105,6 @@ export const MediumPosts = ({ posts }: MediumPostsProps) => {
                         {post.blockquote}
                       </blockquote>
                     )}
-                    {/* Date display - moved to header element similar to ExperienceSection */}
-                    <header
-                      className={postDateVariants()}
-                      aria-label={formatDate(post.isoDate)}
-                    >
-                      {formatDate(post.isoDate)}
-                    </header>
                   </h3>
                 </div>
               </div>
@@ -150,9 +143,8 @@ export async function fetchMediumPosts(username: string): Promise<Post[]> {
   try {
     const feed = await parser.parseURL(feedUrl);
     return (feed.items as MediumPost[])
-      .map((item): Post => {
-        console.log(item);
-        return {
+      .map(
+        (item): Post => ({
           title: item.title ?? "Untitled Post",
           link: item.link ?? "#",
           isoDate: item.isoDate,
@@ -162,8 +154,8 @@ export async function fetchMediumPosts(username: string): Promise<Post[]> {
           blockquote: extractBlockquote(
             item["content:encoded"] || item["content:encodedSnippet"] || "",
           ),
-        };
-      })
+        }),
+      )
       .slice(0, 5);
   } catch (error) {
     console.error("Error fetching or parsing Medium RSS feed:", error);
