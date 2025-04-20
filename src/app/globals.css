@@ -64,6 +64,15 @@
   @apply text-xs font-bold tracking-widest text-slate-500 uppercase group-hover:text-slate-200 group-focus-visible:text-slate-200;
 }
 
+/* Styles for the active navigation link */
+.group.active .nav-indicator {
+  @apply w-16 bg-slate-200;
+}
+
+.group.active .nav-text {
+  @apply text-slate-200;
+}
+
 .experience-tag {
   @apply flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs leading-5 font-medium text-teal-300;
 }

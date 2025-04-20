@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Github, Linkedin, Instagram } from "lucide-react";
+import { NavLinks } from "@thearpitanand/components/NavLinks";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -37,34 +38,7 @@ export default function RootLayout({
                   AI Enthusiast | Building AI Products from 0 to 1 | Scaling to
                   Billions
                 </p>
-                <nav className="mt-16 hidden lg:block">
-                  <ul className="w-max">
-                    <li>
-                      <a
-                        className="group active flex items-center py-3"
-                        href="#about"
-                      >
-                        <span className="nav-indicator"></span>
-                        <span className="nav-text">About</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="group flex items-center py-3"
-                        href="#experience"
-                      >
-                        <span className="nav-indicator"></span>
-                        <span className="nav-text">Experience</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="group flex items-center py-3" href="#blogs">
-                        <span className="nav-indicator"></span>
-                        <span className="nav-text">Blogs</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                <NavLinks />
               </div>
               <ul
                 className="mt-8 ml-1 flex items-center"

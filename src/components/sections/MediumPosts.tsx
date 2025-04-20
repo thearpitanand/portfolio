@@ -39,13 +39,13 @@ export const MediumPosts = ({ posts }: MediumPostsProps) => {
   }
 
   return (
-    <section className={sectionVariants()} aria-label="Blog Posts">
+    <section id="blogs" className={sectionVariants()} aria-label="Blog Posts">
       <div className={sectionHeaderVariants()}>
-        <h2 className={sectionHeaderTitleVariants()}>From the Blog</h2>
+        <h2 className={sectionHeaderTitleVariants()}>Medium Blogs</h2>
       </div>
 
       <ol className="group/list">
-        {[...posts, ...posts].slice(0, 5).map((post, index) => (
+        {posts.slice(0, 5).map((post, index) => (
           <li key={`${post.link}-${index}`} className="mb-12">
             <div className={postItemVariants()}>
               <div className={postItemHoverBackgroundVariants()}></div>
