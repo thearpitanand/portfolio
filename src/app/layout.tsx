@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Github, Linkedin, Instagram } from "lucide-react";
 import { NavLinks } from "@thearpitanand/components/NavLinks";
+import { CursorFollower } from "@thearpitanand/components/effects/CursorFollower";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} bg-gray-900 font-sans leading-relaxed text-gray-300 antialiased selection:bg-cyan-300 selection:text-cyan-900`}
+        className={`${inter.variable} bg-black font-sans leading-relaxed text-slate-400 antialiased selection:bg-cyan-300 selection:text-cyan-900`}
       >
+        <CursorFollower />
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
           <div className="lg:flex lg:justify-between lg:gap-4">
             <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
@@ -46,7 +48,7 @@ export default function RootLayout({
               >
                 <li className="mr-4 text-xs">
                   <a
-                    className="block text-gray-400 transition-colors hover:text-gray-300"
+                    className="block text-slate-400 transition-colors hover:text-slate-200"
                     href="https://github.com/thearpitanand"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -57,7 +59,7 @@ export default function RootLayout({
                 </li>
                 <li className="mr-4 text-xs">
                   <a
-                    className="block text-gray-400 transition-colors hover:text-gray-300"
+                    className="block text-slate-400 transition-colors hover:text-slate-200"
                     href="https://www.linkedin.com/in/thearpitanand/"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -68,7 +70,7 @@ export default function RootLayout({
                 </li>
                 <li className="mr-4 text-xs">
                   <a
-                    className="block text-gray-400 transition-colors hover:text-gray-300"
+                    className="block text-slate-400 transition-colors hover:text-slate-200"
                     href="https://www.instagram.com/anand_arpit/"
                     target="_blank"
                     rel="noreferrer noopener"
