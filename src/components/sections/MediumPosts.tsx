@@ -9,7 +9,6 @@ import {
   postItemVariants,
   postMetaVariants,
   postTitleVariants,
-  postDateVariants,
   postTitleArrowVariants,
   postImageWrapperVariants,
   postPlaceholderVariants,
@@ -17,12 +16,6 @@ import {
   postItemContentVariants,
 } from "../ui/variants/posts";
 import Parser from "rss-parser";
-interface PostItem {
-  title: string;
-  link: string;
-  isoDate?: string;
-  imageUrl?: string;
-}
 
 interface MediumPostsProps {
   posts: Post[];
@@ -38,17 +31,6 @@ const extractBlockquote = (content: string): string | undefined => {
     /<blockquote[^>]*>([\s\S]*?)<\/blockquote>/,
   );
   return blockquoteMatch ? blockquoteMatch[1] : undefined;
-};
-
-const formatDate = (isoDate?: string): string => {
-  if (!isoDate) return "Unknown Year";
-
-  try {
-    const date = new Date(isoDate);
-    return date.getFullYear().toString();
-  } catch {
-    return "Unknown Year";
-  }
 };
 
 export const MediumPosts = ({ posts }: MediumPostsProps) => {
