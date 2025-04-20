@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Github, Linkedin, Instagram } from "lucide-react";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +34,7 @@ export default function RootLayout({
                   Senior Frontend Engineer
                 </h2>
                 <p className="mt-4 max-w-xs leading-normal">
-                  Enthusiast | Building AI Products from 0 to 1 | Scaling to
+                  AI Enthusiast | Building AI Products from 0 to 1 | Scaling to
                   Billions
                 </p>
                 <nav className="mt-16 hidden lg:block">
@@ -57,12 +58,9 @@ export default function RootLayout({
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="group flex items-center py-3"
-                        href="#projects"
-                      >
+                      <a className="group flex items-center py-3" href="#blogs">
                         <span className="nav-indicator"></span>
-                        <span className="nav-text">Projects</span>
+                        <span className="nav-text">Blogs</span>
                       </a>
                     </li>
                   </ul>
@@ -72,26 +70,37 @@ export default function RootLayout({
                 className="mt-8 ml-1 flex items-center"
                 aria-label="Social media"
               >
-                <li className="mr-5 shrink-0 text-xs">
+                <li className="mr-4 text-xs">
                   <a
-                    className="block hover:text-slate-200"
-                    href="#"
+                    className="block text-gray-400 transition-colors hover:text-gray-300"
+                    href="https://github.com/thearpitanand"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label="GitHub (opens in a new tab)"
                   >
-                    <span>GitHub</span>
+                    <Github size={20} />
                   </a>
                 </li>
-                <li className="mr-5 shrink-0 text-xs">
+                <li className="mr-4 text-xs">
                   <a
-                    className="block hover:text-slate-200"
-                    href="#"
+                    className="block text-gray-400 transition-colors hover:text-gray-300"
+                    href="https://www.linkedin.com/in/thearpitanand/"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label="LinkedIn (opens in a new tab)"
                   >
-                    <span>LinkedIn</span>
+                    <Linkedin size={20} />
+                  </a>
+                </li>
+                <li className="mr-4 text-xs">
+                  <a
+                    className="block text-gray-400 transition-colors hover:text-gray-300"
+                    href="https://www.instagram.com/anand_arpit/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Instagram (opens in a new tab)"
+                  >
+                    <Instagram size={20} />
                   </a>
                 </li>
               </ul>
