@@ -16,7 +16,7 @@ export const postItemVariants = cva(
 );
 
 export const postItemHoverBackgroundVariants = cva(
-  "absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg",
+  "absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-400/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg",
   {
     variants: {
       variant: {
@@ -52,7 +52,7 @@ export const postDateVariants = cva(
 );
 
 export const postTitleVariants = cva(
-  "group/link inline-flex items-baseline text-base leading-tight font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300",
+  "group/link inline-flex items-baseline text-base leading-tight font-medium text-slate-200 hover:text-slate-100 focus-visible:text-slate-100",
   {
     variants: {
       size: {
