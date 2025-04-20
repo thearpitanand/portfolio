@@ -1,0 +1,55 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Guidelines for Next.js 14 with Tailwind CSS, using cva and @apply best practices
+globs: ["**/*.tsx", "**/*.ts", "**/*.css"]
+alwaysApply: true
+---
+
+# Project Setup
+
+- Use **Next.js 14** with the **App Router**.
+- Structure routes and pages in the `app/` directory.
+- Use **Server Components** by default; only mark components as `'use client'` when necessary.
+- Use `src/` directory layout with consistent folder organization (`components/`, `lib/`, `hooks/`, etc.).
+
+# Styling – Tailwind CSS
+
+## 1. Component Abstraction First
+- Always break down complex UIs into smaller, reusable components.
+- Prioritize clean component design before applying `cva` or `@apply`.
+
+## 2. Use `cva` for Component Variants
+- Use `class-variance-authority` to manage style variants based on props like `size`, `intent`, `state`.
+- Co-locate `cva` definitions with the component (e.g., `Button.tsx`, or `Button/variants.ts`).
+- Keep templates clean and variant logic type-safe.
+
+## 3. Use `@apply` Sparingly for Semantic Patterns
+- Use `@apply` **only** in global styles (`src/styles/globals.css`) for common, structural patterns (e.g., `.page-header`, `.form-section`).
+- Avoid utility-descriptive class names like `.px-4-py-2-bg-blue`.
+- Don’t use `@apply` for variants (use `cva` instead).
+
+## 4. Prefer Inline Utilities for One-Offs
+- For single-use elements, apply Tailwind utility classes inline.
+- Avoid bloating global CSS or `cva` configs for non-reusable styles.
+
+## 5. Review Styling Logic
+When styling:
+- Does it belong in a reusable component variant? → Use `cva`.
+- Is it a structural, semantic, shared style? → Use `@apply` in global CSS.
+- Is it unique and isolated? → Keep it inline with utility classes.
+
+# Component Structure
+
+- Use **functional components** with **TypeScript**.
+- Define prop types with interfaces.
+- Prefer **named exports** for components.
+
+# Best Practices
+
+- Use `error.tsx` and `loading.tsx` for proper error and loading states.
+- Use Next.js’s `<Image>` for image optimization.
+- Write accessible components with ARIA attributes and semantic HTML.
