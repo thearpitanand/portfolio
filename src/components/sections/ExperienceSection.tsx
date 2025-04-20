@@ -67,22 +67,12 @@ const experiences: Experience[] = [
     link: "https://www.zethic.com/",
   },
   {
-    date: "Jun 2020 — Dec 2021",
+    date: "July 2020 — Dec 2021",
     title: "Freelance Software Developer",
     company: "",
     description:
-      "Up-skilled and worked on projects. Developed a deep understanding of the latest technologies and best practices in the industry.",
-    tags: [
-      "React.js",
-      "Next.js",
-      "Node.js",
-      "Nest.js",
-      "TypeScript",
-      "Python",
-      "AWS",
-      "GCP",
-      "Docker",
-    ],
+      "Built innovative software solutions by collaborating on diverse projects, transforming personal and peer-driven ideas into functional, full-stack applications. Leveraged this period to rapidly explore and master emerging technologies, significantly enhancing my expertise across modern frameworks and cloud environments.",
+    tags: ["React.js", "Next.js", "Node.js", "TypeScript", "AWS", "Docker"],
   },
 ];
 
