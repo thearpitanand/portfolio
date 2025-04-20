@@ -23,7 +23,6 @@ interface Experience {
   link?: string; // Optional link
 }
 
-// Updated Experience Data from LinkedIn Profile
 const experiences: Experience[] = [
   {
     date: "Dec 2023 — Present",

@@ -109,7 +109,7 @@ export default function RootLayout({
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    Brittany Chiang's portfolio
+                    {`Brittany Chiang's portfolio`}
                   </a>
                   .
                 </p>
