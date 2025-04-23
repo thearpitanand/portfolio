@@ -5,6 +5,12 @@ import {
   fetchMediumPosts,
 } from "@thearpitanand/components/sections/MediumPosts";
 
+/**
+ * Revalidate the page every 24 hours
+ * @see https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating
+ */
+export const revalidate = 86400;
+
 export default async function Home() {
   const mediumPosts = await fetchMediumPosts("thearpitanand");
 
