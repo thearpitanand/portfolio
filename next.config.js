@@ -1,14 +1,15 @@
-module.exports = {
-  reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    domains: [
-      "raw.githubusercontent.com",
-      "cdn4.iconfinder.com",
-      "upload.wikimedia.org",
-      "img.icons8.com",
-      "github.com",
-      "material-ui.com",
-      "www.markusantonwolf.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn-images-1.medium.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
+
+module.exports = nextConfig;
