@@ -6,6 +6,7 @@ import { siteConfig } from "@thearpitanand/config/site";
 import { Header } from "@thearpitanand/components/layout/Header";
 import { Footer } from "@thearpitanand/components/layout/Footer";
 import { SchemaScript } from "@thearpitanand/components/layout/SchemaScript";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -104,6 +105,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} bg-black font-sans leading-relaxed text-slate-400 antialiased selection:bg-cyan-300 selection:text-cyan-900`}
       >
+        <a
+          href="#content"
+          className="sr-only z-50 rounded bg-cyan-300 px-4 py-2 font-medium text-cyan-950 focus:not-sr-only focus:absolute focus:top-4 focus:left-4"
+        >
+          Skip to content
+        </a>
         <SchemaScript />
         <CursorFollower />
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
@@ -116,6 +123,7 @@ export default function RootLayout({
             </main>
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );

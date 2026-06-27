@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { NavLinks } from "@thearpitanand/components/NavLinks";
 import { siteConfig } from "@thearpitanand/config/site";
 
@@ -26,7 +26,7 @@ export function Header() {
             rel="noreferrer noopener"
             aria-label="GitHub (opens in a new tab)"
           >
-            <Github size={20} />
+            <FaGithub size={20} />
           </a>
         </li>
         <li className="mr-4 text-xs">
@@ -37,7 +37,7 @@ export function Header() {
             rel="noreferrer noopener"
             aria-label="LinkedIn (opens in a new tab)"
           >
-            <Linkedin size={20} />
+            <FaLinkedinIn size={20} />
           </a>
         </li>
         <li className="mr-4 text-xs">
@@ -48,7 +48,7 @@ export function Header() {
             rel="noreferrer noopener"
             aria-label="Instagram (opens in a new tab)"
           >
-            <Instagram size={20} />
+            <FaInstagram size={20} />
           </a>
         </li>
       </ul>
