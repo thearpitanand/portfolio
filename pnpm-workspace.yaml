@@ -6,3 +6,4 @@ allowBuilds:
 # Versions newer than the global minimumReleaseAge threshold, explicitly permitted.
 minimumReleaseAgeExclude:
   - '@tailwindcss/typography@0.5.20'
+  - prettier@3.9.0
