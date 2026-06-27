@@ -16,9 +16,10 @@ import {
   postItemContentVariants,
 } from "../ui/variants/posts";
 import Parser from "rss-parser";
+import type { ListedPost } from "@thearpitanand/types/blog";
 
 interface MediumPostsProps {
-  posts: Post[];
+  posts: ListedPost[];
 }
 
 const extractImageUrl = (content: string): string | undefined => {
@@ -41,70 +42,77 @@ export const MediumPosts = ({ posts }: MediumPostsProps) => {
   return (
     <section id="blogs" className={sectionVariants()} aria-label="Blog Posts">
       <div className={sectionHeaderVariants()}>
-        <h2 className={sectionHeaderTitleVariants()}>Medium Blogs</h2>
+        <h2 className={sectionHeaderTitleVariants()}>Latest Writing</h2>
       </div>
 
       <ol className="group/list">
-        {posts.slice(0, 5).map((post, index) => (
-          <li key={`${post.link}-${index}`} className="mb-12">
-            <div className={postItemVariants()}>
-              <div className={postItemHoverBackgroundVariants()}></div>
-              {/* Image/Meta info - kept in its own grid column */}
-              <div className={postMetaVariants()}>
-                {post.imageUrl ? (
-                  <div className={postImageWrapperVariants()}>
-                    <Image
-                      src={post.imageUrl}
-                      alt={`Featured image for ${post.title}`}
-                      fill
-                      sizes="128px"
-                      className="object-cover"
-                      priority={index < 3}
-                    />
-                  </div>
-                ) : (
-                  <div className={postPlaceholderVariants()}>No Image</div>
-                )}
-              </div>
+        {posts.slice(0, 5).map((post, index) => {
+          const isInternal = post.source === "internal";
+          return (
+            <li key={`${post.href}-${index}`} className="mb-12">
+              <div className={postItemVariants()}>
+                <div className={postItemHoverBackgroundVariants()}></div>
+                {/* Image/Meta info - kept in its own grid column */}
+                <div className={postMetaVariants()}>
+                  {post.imageUrl ? (
+                    <div className={postImageWrapperVariants()}>
+                      <Image
+                        src={post.imageUrl}
+                        alt={`Featured image for ${post.title}`}
+                        fill
+                        sizes="128px"
+                        className="object-cover"
+                        priority={index < 3}
+                      />
+                    </div>
+                  ) : (
+                    <div className={postPlaceholderVariants()}>No Image</div>
+                  )}
+                </div>
 
-              <div className={postItemContentVariants()}>
-                {/* Content area - using the main grid column like ExperienceSection */}
-                <div className="z-10 sm:col-span-6">
-                  <h3 className="font-medium text-slate-200">
-                    <Link
-                      href={post.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={postTitleVariants()}
-                      aria-label={`${post.title} (opens in a new tab)`}
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>{post.title}</span>
-                      <span className={postTitleArrowVariants()}>↗</span>
-                    </Link>
-                    {post.blockquote && (
-                      <blockquote className="mt-2 text-sm text-slate-400 italic">
-                        {post.blockquote}
-                      </blockquote>
-                    )}
-                  </h3>
+                <div className={postItemContentVariants()}>
+                  {/* Content area - using the main grid column like ExperienceSection */}
+                  <div className="z-10 sm:col-span-6">
+                    <h3 className="font-medium text-slate-200">
+                      {isInternal ? (
+                        <Link
+                          href={post.href}
+                          className={postTitleVariants()}
+                          aria-label={post.title}
+                        >
+                          <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span>{post.title}</span>
+                        </Link>
+                      ) : (
+                        <Link
+                          href={post.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={postTitleVariants()}
+                          aria-label={`${post.title} (opens in a new tab)`}
+                        >
+                          <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span>{post.title}</span>
+                          <span className={postTitleArrowVariants()}>↗</span>
+                        </Link>
+                      )}
+                      {post.blockquote && (
+                        <blockquote className="mt-2 text-sm text-slate-400 italic">
+                          {post.blockquote}
+                        </blockquote>
+                      )}
+                    </h3>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        ))}
+            </li>
+          );
+        })}
       </ol>
     </section>
   );
 };
 
-interface Post {
-  title: string;
-  link: string;
-  isoDate?: string;
-  imageUrl?: string;
-  blockquote?: string;
-}
 export interface MediumPost {
   creator: string;
   title: string;
@@ -118,7 +126,7 @@ export interface MediumPost {
   isoDate: string;
 }
 
-export async function fetchMediumPosts(username: string): Promise<Post[]> {
+export async function fetchMediumPosts(username: string): Promise<ListedPost[]> {
   const parser = new Parser();
   const feedUrl = `https://medium.com/feed/@${username}`;
 
@@ -126,9 +134,9 @@ export async function fetchMediumPosts(username: string): Promise<Post[]> {
     const feed = await parser.parseURL(feedUrl);
     return (feed.items as MediumPost[])
       .map(
-        (item): Post => ({
+        (item): ListedPost => ({
           title: item.title ?? "Untitled Post",
-          link: item.link ?? "#",
+          href: item.link ?? "#",
           isoDate: item.isoDate,
           imageUrl: extractImageUrl(
             item["content:encoded"] || item["content:encodedSnippet"] || "",
@@ -136,6 +144,7 @@ export async function fetchMediumPosts(username: string): Promise<Post[]> {
           blockquote: extractBlockquote(
             item["content:encoded"] || item["content:encodedSnippet"] || "",
           ),
+          source: "medium",
         }),
       )
       .slice(0, 5);

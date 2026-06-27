@@ -1,0 +1,8 @@
+# Explicit allowlist for native postinstall build scripts (pnpm blocks all by default).
+# Only these vetted packages may run lifecycle scripts.
+allowBuilds:
+  sharp: true # Next.js production image optimization
+  unrs-resolver: true # native module resolver for eslint-plugin-import
+# Versions newer than the global minimumReleaseAge threshold, explicitly permitted.
+minimumReleaseAgeExclude:
+  - '@tailwindcss/typography@0.5.20'
